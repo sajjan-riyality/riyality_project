@@ -27,7 +27,7 @@
 					<div class="container">
 						
 						<div class="row py-3 gy-5 gy-lg-0">
-							<div class="col-lg-9 mt-0">
+							<div class="col-lg-12 mt-0">
 
 								<div class="custom-course-detail">
 
@@ -47,7 +47,7 @@
 											<div class="d-flex flex-row align-items-center h-100">
 												<div class="p-0">
 													<p class="mb-0 text-1 text-uppercase p-relative top-3">Category</p>
-													<h4 class="mb-0 text-color-secondary text-4"><a href="demo-education-courses-details.html" class="text-color-secondary" title="">Web Development</a></h4>
+													<h4 class="mb-0 text-color-secondary text-4"><a href="demo-education-courses-details.html" class="text-color-secondary" title=""> Back End  Development</a></h4>
 												</div>
 											</div>
 										</div>
@@ -66,12 +66,12 @@
 											</div>
 										</div>
 									</div>
-
+<!-- 
 									<div class="pb-5">
 										<div class="ratio ratio-16x9">
 											<iframe src="http://player.vimeo.com/video/67957799" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 										</div>	
-									</div>
+									</div> -->
 
 									<h2 class="text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-3">Description</h2>
 
@@ -523,7 +523,7 @@
 							</div>
 
 							<!-- Sidebar -->
-							<div class="col-lg-3 position-relative">
+						<!-- 	<div class="col-lg-3 position-relative">
 								
 								<div class="mt-2 mb-4 pb-2">
 									<h2 class="text-color-secondary font-weight-semi-bold text-5 line-height-1 mb-3">Categories</h2>
@@ -613,138 +613,22 @@
 												<div class="col col pt-2">
 													<h2 class="text-color-light font-weight-semi-bold text-7 mb-0 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="150">Ready to kick-start your career?</h2>
 
-													<a href="demo-education-courses.html" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 mt-4 mb-2 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="350">GET STARTED NOW</a>
+													<a href="courses.php" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 mt-4 mb-2 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="350">GET STARTED NOW</a>
 												</div>
 											</div>
 										</div>
 									</section>
 								</div>
 
-							</div>
+							</div> -->
 						</div>
 
 					</div>
 				</section>
 
 			</div>
+           		 <?php 
+    include 'footer.php'
+  ?> 
 
-			<footer id="footer" class="footer-reveal bg-color-secondary border-0 mt-0">
-				<div class="container py-5">
-					<div class="row py-5">
-						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 
-							<a href="demo-education.html" class="d-inline-block mb-3">
-								<img alt="Porto" width="115" height="30" src="img/demos/education/logo-footer.png">
-							</a>
-
-							<ul class="social-icons social-icons-clean social-icons-icon-light">
-								<li>
-									<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-								</li>
-								<li>
-									<a href="https://www.twitter.com/"><i class="fab fa-x-twitter"></i></a>
-								</li>
-								<li>
-									<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-								</li>
-							</ul>
-
-							<p class="text-3 mt-4 mb-0 line-height-8 text-color-tertiary opacity-6">Porto Education. © 2024.<br> All Rights Reserved</p>
-
-						</div>
-						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">About Us</h4>
-							<ul class="list list-unstyled text-color-tertiary opacity-6">
-								<li class="mb-1">
-									Porto Education
-								</li>
-								<li class="mb-1">
-									123 Porto Blvd, Suite 100
-								</li>
-								<li class="mb-1">
-									New York, NY
-								</li>
-								<li class="mb-1">
-									Phone: <a href="tel:1234567890" class="text-decoration-none text-color-tertiary text-color-hover-primary">123-456-7890</a>
-								</li>
-								<li>
-									Email: <a href="https://www.okler.net/cdn-cgi/l/email-protection#41242c20282d01252e2c20282f6f222e2c" class="text-decoration-none text-color-tertiary text-color-hover-primary"><span class="__cf_email__" data-cfemail="30405f42445f70545f5d51595e1e535f5d">[email&#160;protected]</span></a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">Navigation</h4>
-							<ul class="list list-unstyled opacity-6">
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Home</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-about-us.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- About Us</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-courses.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Courses</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-instructors.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Instructors</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-blog.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Blog</a>
-								</li>
-								<li>
-									<a href="demo-education-contact-us.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Contact Us</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">Support</h4>
-							<ul class="list list-unstyled opacity-6">
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Documentation</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Forums</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Open a Ticket</a>
-								</li>
-								<li>
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- FAQ's</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">More</h4>
-							<ul class="list list-unstyled opacity-6">
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Terms of Use</a>
-								</li>
-								<li>
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Privacy Policy</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-
-		<a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-education.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
-		
-		<a class="envato-buy-redirect" href="https://themeforest.net/checkout/from_item/4106987?license=regular&amp;support=bundle_6month&amp;ref=Okler" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Buy Porto"><i class="fas fa-shopping-cart"></i></a>
-		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/demos-redirect.png" class="img-fluid" /></a>
-		
-
-		<!-- Vendor -->		<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/plugins/js/plugins.min.js"></script>		<script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
-
-		<!-- Theme Base, Components and Settings -->
-		<script src="js/theme.js"></script>
-
-		
-
-		<!-- Theme Initialization Files -->
-		<script src="js/theme.init.js"></script>
-
-	</body>
-
-<!-- Mirrored from www.okler.net/previews/porto/10.2.0/demo-education-courses-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 09:32:57 GMT -->
-</html>

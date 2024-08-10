@@ -127,7 +127,7 @@ function cooseCourse(buttonId) {
 }
 
 
-
+ // course register button 
 function messageToUser() {
    
              const phoneNumber = document.getElementById("mobileNumber").value; 
@@ -140,6 +140,50 @@ function messageToUser() {
             window.open(url, '_blank');
 
 };
+
+ // contact us  form submit button 
+function dataSubmit() {
+    let fullName = document.getElementById('name').value;
+    const phoneNumber = document.getElementById("phone").value;
+    let email = document.getElementById('email').value;
+    let subject = document.getElementById('subject').value;
+
+    // Use `textContent` or `innerText` if you want the text content without HTML tags
+    let textMessage = document.getElementById('message').value || document.getElementById('message').innerText;
+
+    // Construct the message with line breaks
+    const message = encodeURIComponent(`Hello sir,
+    My name is :- ${fullName}.
+    My Phone Number is :- ${phoneNumber}.
+    My Email is :- ${email}.
+    I Am Looking For :- ${subject}.
+   Massage :- ${textMessage} .`); // Use `textMessage` if you want to include the content of the message field
+    
+    // WhatsApp URL with the message
+    const url = `https://wa.me/+918788396162?text= Hello sir, %0A My name is :- ${fullName}.%0A My Phone Number is :- ${phoneNumber}.%0A My Email is :- ${email}. %0A I Am Looking For :- ${subject}.%0A Massage :- ${textMessage} 
+
+ `;
+    
+    // Open the URL in a new tab
+    window.open(url, '_blank');
+};
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      // Custom validation logic
+
+       if (firstName || lastName || email || mobile) {
+       dataSubmit();
+      }
+
+   
+      // Optional: Add more custom validations as needed
+    });
+  });
+
+
 
 // form required data filling
   

@@ -83,7 +83,7 @@
 					<div class="row pb-5 mb-3">
 						<div class="col">
 							<h2 class="text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-4">Send a Message</h2>
-							<form class="contact-form custom-form-style-1" action="https://www.okler.net/previews/porto/10.2.0/php/contact-form.php" method="POST">
+							<form class="contact-form custom-form-style-1" id="contactForm" method="POST">
                                 <div class="contact-form-success alert alert-success d-none mt-4">
                                     <strong>Success!</strong> Your message has been sent to us.
                                 </div>
@@ -95,7 +95,7 @@
                                 
                                 <div class="row row-gutter-sm">
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required placeholder="Your Name">
+                                        <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required placeholder="Your Full Name">
                                     </div>
                                     <div class="form-group col-lg-6 mb-4">
                                         <input type="text" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" required placeholder="Phone Number">
@@ -103,10 +103,10 @@
                                 </div>
                                 <div class="row row-gutter-sm">
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required placeholder="Your Name">
+                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required placeholder="Enter Your Email">
                                     </div>
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required placeholder="Subject">
+                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required placeholder="You are lokking for ">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -116,14 +116,14 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col mb-0">
-                                        <button type="submit" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 mt-4 mb-2" data-loading-text="Loading...">SEND MESSAGE</button>
+                                        <button type="submit" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 mt-4 mb-2"   >SEND MESSAGE</button>
                                     </div>
                                 </div>
                             </form>
 						</div>
 					</div>
 				</div>
-
+            
 				<section class="section section-height-3 bg-color-tertiary border-0 m-0">
 					<div class="container py-3">
 						<div class="row align-items-center justify-content-center text-center text-lg-start">
@@ -131,7 +131,7 @@
 								<h2 class="text-color-primary font-weight-bold mb-0 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="150">Ready to kick-start your career?</h2>
 							</div>
 							<div class="col-lg-3 text-lg-end">
-								<a href="demo-education-courses.html" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 mt-4 mb-2 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="350">GET STARTED NOW</a>
+								<a href="courses.php" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 mt-4 mb-2 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="350">GET STARTED NOW</a>
 							</div>
 						</div>
 					</div>

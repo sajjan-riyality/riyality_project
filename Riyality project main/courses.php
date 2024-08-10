@@ -1,6 +1,22 @@
  <?php 
     include 'header.php'
   ?> 
+
+  <style type="text/css">
+  	
+/*        pasination of course pagge   */
+         .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .page-item.active .page-link {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+  </style>
 			<div role="main" class="main">
 			
 				<section class="page-header page-header-modern page-header-background page-header-background-md custom-bg-color-grey-1 mb-0" style="background-image: url(img/demos/education/backgrounds/page-header.jpg); background-position: 100% 100%;">
@@ -22,12 +38,15 @@
 						</div>
 					</div>
 				</div>
+
+
+
 				<section class="section custom-bg-color-grey-1 border-0 m-0">
 					<div class="container">
 						
 						<div class="row py-3 gy-5 gy-lg-0">
-							<div class="col-lg-12 mt-0">
-
+							<div class="col-lg-12 mt-0 content">
+                        <section class="page active" id="page-1">
 								<div class="row">
 									<div class="col-md-3 mb-4 pb-1">
 										<div class="card custom-card-courses border-radius-0 hover-effect-1">
@@ -43,7 +62,7 @@
 											</div>
 											<div class="card-body">
 												<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
-												<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="frontEndCourse" title="">Front End </a></h4>
+												<h4 class="mb-3 text-color-secondary"><a href="courses-details-1.php" class="text-color-secondary" id="frontEndCourse" title="">Front End </a></h4>
 												<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
 
 
@@ -438,25 +457,446 @@
 										</div>
 									</div>
 								</div>
+								</section>
+
+
+             
+
+                      <!-- second section -->
+                         <section class="page" id="page-2">  
+		                   <div class="col-lg-12 mt-0">
+
+										<div class="row">
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-1.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="frontEndCourse" title="">Web development</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5"  id="frontEndCourseValue">$79</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="frontEndCouseBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-2.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar-2.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="javaCourse" title="">Java</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="javaCourseValue">$59</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="javaBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-3.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar-3.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="softSkillCourse" title="">Soft Skills</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="softSkillCourseValue">$29</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="softSkillBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-4.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar-2.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="phpCourse" title="">PHP</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="phpCourseValue">$19</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="phpBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>										
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-1.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="pythonCourse" title="">Python</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="pythonCourseValue">$79</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="pythonBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-2.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar-2.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="devopsCourse" title="">DevOps</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="devopsCourseValue">$59</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="devopsBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-3.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar-3.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="mearnStack" title="">Mearn Stack</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="mearnStackValue">$29</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="mearnStackBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-4.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar-2.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="mySql" title="">SQL</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="mySqlValue">$19</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="mySqlBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-1.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary"id="softwereTesting" title="">Softwere Testing</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="softwereTestingValue">$79</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="testingBtn" onclick="cooseCourse(this.id)" >
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>	
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-1.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="websiteHosting" title="">Website Hosting </a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="websiteHostingeValue">$79</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="hostingBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>	
+											<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-1.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="templeteModification" title="">Templete Modification</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="templeteModificationValue">$79</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="templateBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+												<div class="col-md-3 mb-4 pb-1">
+												<div class="card custom-card-courses border-radius-0 hover-effect-1">
+													<div class="p-relative">
+														<a href="courses-details.php" class="text-color-secondary" title="">
+															<img class="card-img-top border-radius-0" src="img/demos/education/courses/course-1.jpg" alt="" />
+														</a>
+														<div class="custom-card-courses-author">
+															<div class="img-thumbnail img-thumbnail-no-borders">
+																<img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<p class="mb-0 text-1 p-relative top-5 text-uppercase">John Doe</p>
+														<h4 class="mb-3 text-color-secondary"><a href="courses-details.php" class="text-color-secondary" id="automation" title="">Automation</a></h4>
+														<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
+
+
+														<div class="float-end">
+															<strong class="text-primary text-5" id="automationValue">$79</strong>
+														</div>
+
+														<div class="text-2">
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-user"></i> 123 </span>
+															<span class="d-inline-block pe-2"><i class="far text-primary fa-comments"></i> 123</span>
+														</div>
+														<div class="col text-center">
+								                    <button type="button" class="btn btn-secondary font-weight-bold btn-px-3  mt-4 mb-2 enroll-btn " data-appear-animation="fadeInUpShorterPlus" data-bs-toggle="modal" data-bs-target="#exampleModal" id="automationBtn" onclick="cooseCourse(this.id)">
+		                                       ENROLL NOW
+		                                      </button>
+								               	</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+							</div>
+							</section>
 
 								<div class="row">
 									<div class="col">
 										<ul class="pagination float-end p-relative bottom-2">
 											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
 											<li class="page-item active"><a class="page-link" href="#">1</a></li>
-											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#page-2">2</a></li>
 											<li class="page-item"><a class="page-link" href="#">3</a></li>
 											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
 										</ul>
 									</div>
 								</div>
 
-							</div>
-
 							<!-- Sidebar -->
-							<div class="col-lg-3 position-relative">
+							<!-- <div class="col-lg-3 position-relative">
 								
-							<!-- 	<div class="mt-2 mb-4 pb-2">
+							 	<div class="mt-2 mb-4 pb-2">
 									<h2 class="text-color-secondary font-weight-semi-bold text-5 line-height-1 mb-3">Categories</h2>
 
 									<ul class="nav nav-list flex-column p-relative right-9">
@@ -475,7 +915,7 @@
 										<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Photography (1)</a></li>
 									</ul>
 								</div>
- --><!-- 
+ 
 								<div class="mt-2 mb-4 pb-2">
 
 									<h2 class="text-color-secondary font-weight-semi-bold text-5 line-height-1 mb-3">Latest Courses</h2>
@@ -528,8 +968,8 @@
 										</li>
 									</ul>
 
-								</div> -->
-<!-- 
+								</div> 
+ 
 								<div class="mt-2 mb-4 pb-2">
 									<section class="section section-height-3 bg-color-primary border-0 m-0">
 										<div class="container p-relative py-3">
@@ -549,9 +989,14 @@
 											</div>
 										</div>
 									</section>
-								</div> -->
+								</div>
+							</div> -->
 
-							</div>
+
+
+
+
+
 						</div>
 
 					</div>

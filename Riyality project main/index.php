@@ -29,6 +29,25 @@
 									</div>
 								</div>
 
+									<div class="owl-item position-relative overflow-hidden">
+									<div class="background-image-wrapper custom-bg-color-grey-1 position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/demos/education/slides/slide-1-bg.jpg); background-size: cover; background-position: 100% 100%;">
+									</div>
+
+									<img src="img/slides/slide-1.jpg" class="img-fluid  d-lg-block " data-appear-animation="fadeInUpShorter"  alt="" />
+
+									<div class="container h-100 r-relative z-index-1">
+										<div class="row h-100 align-items-center">
+											<div class="col">
+												<div class="text-end float-lg-start custom-slider-text-block">
+													<h2 class="text-color-secondary font-weight-extra-bold mb-4 custom-slider-text-1 p-relative z-index-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"><em>#</em>letslearn</h2>
+													<h2 class="text-color-default font-weight-semi-bold mb-3 text-5 p-relative z-index-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Complete Solution For Your Education Needs!</h2>
+													<a href="#courses" data-hash data-hash-offset="0" data-hash-offset-lg="70" class="btn btn-secondary font-weight-bold btn-px-5 btn-py-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">GET STARTED</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<!-- Carousel Slide 2 -->
 								<div class="owl-item position-relative overflow-hidden">
 									<div class="background-image-wrapper custom-bg-color-grey-1 position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/demos/education/slides/slide-2-bg.jpg); background-size: cover; background-position: 100% 100%;">

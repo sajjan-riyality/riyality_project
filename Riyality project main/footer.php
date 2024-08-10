@@ -99,21 +99,65 @@
 			</footer>
 		</div>
 
-		<a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-education.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
+		<!-- <a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-education.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
 		
 		<a class="envato-buy-redirect" href="https://themeforest.net/checkout/from_item/4106987?license=regular&amp;support=bundle_6month&amp;ref=Okler" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Buy Porto"><i class="fas fa-shopping-cart"></i></a>
-		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/demos-redirect.png" class="img-fluid" /></a>
+		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/demos-redirect.png" class="img-fluid" /></a> -->
 		
 
-		<!-- Vendor -->		<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/plugins/js/plugins.min.js"></script>		<script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
+		<!-- Vendor -->		<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+		<script src="vendor/plugins/js/plugins.min.js"></script>	
+			<script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
+
+
+<!-- Modal -->
+<div class="modal fade show" id="autoOpenModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl ">
+        <div class="modal-content " >
+        	 
+            <div class="modal-header" style="border-bottom: 0px;" >
+               
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               
+            </div>
+             <div class="modal-body">
+               <img src="img\gallery\gallery-2.jpg" style=" background-size: cover; background-position: 100% 100%; height: 500px; width: 100%; ">
+            </div>
+           
+           
+        </div>
+    </div>
+</div>
+
+<script>
+// Ensure the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize the modal
+    var myModal = new bootstrap.Modal(document.getElementById('autoOpenModal'));
+    // Show the modal
+    myModal.show();
+});
+</script>
+
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+
 
 		
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
 		<script  src="js/enroll-btn.js"></script>
+		<script  src="js/pasiantion.js"></script>
 
 
 							<!-- Modal -->
